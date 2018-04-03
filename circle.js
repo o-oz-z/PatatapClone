@@ -2,11 +2,9 @@ var circles = [];
 
 function onKeyDown(event) {
 	if(keyData[event.key]){
-
 		var maxPoint = new Point(view.size.width, view.size.height);
 		var randomPoint = Point.random();
 		var point = maxPoint * randomPoint;
-
 		var newCircle = new Path.Circle(point, 500);
 
 		newCircle.fillColor = keyData[event.key].color;
